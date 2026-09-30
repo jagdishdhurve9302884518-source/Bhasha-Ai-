@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhasha AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <div class="logo">भा</div>
+      <div>
+        <h1>Bhasha AI</h1>
+        <p><span class="dot"></span> Online</p>
+      </div>
+    </header>
+
+    <main id="chat">
+      <div class="msg ai">
+        <div class="avatar">भा</div>
+        <div class="bubble">
+          नमस्ते! 👋 मैं <b>Bhasha AI</b> हूँ।<br>
+          आप हिंदी या English में सवाल पूछ सकते हैं।<br><br>
+          📷 फोटो भी upload कर सकते हैं।
+        </div>
+      </div>
+    </main>
+
+    <div class="quick">
+      <button data-q="भारत के बारे में बताओ">🇮🇳 भारत</button>
+      <button data-q="MPPSC विज्ञान समझाओ">📚 MPPSC</button>
+      <button data-q="एक कविता लिखो">✍️ कविता</button>
+      <button data-q="English में translate करो">🌐 Translate</button>
+    </div>
+
+    <div id="preview" class="preview hidden">
+      <img id="previewImg" alt="Selected photo">
+      <button id="removePhoto">×</button>
+    </div>
+
+    <div class="composer">
+      <label class="icon">
+        📷
+        <input id="photoInput" type="file" accept="image/*" hidden>
+      </label>
+      <input id="textInput" type="text" placeholder="Bhasha AI से पूछें...">
+      <button id="sendBtn" class="send">➤</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
